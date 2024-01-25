@@ -11,7 +11,7 @@
         VaryLightGray: "hsl(0, 0%, 98%)",
       },
       spacing: {
-        pw: "80rem",
+        pw: "87rem",
       },
     },
   },

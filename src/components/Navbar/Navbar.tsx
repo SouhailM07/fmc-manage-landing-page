@@ -17,10 +17,11 @@ export default function Navbar() {
       <AppBar
         sx={{ backgroundColor: "white", boxShadow: "none" }}
         position="sticky"
+        className="!inline-block"
       >
         <Toolbar
           component="nav"
-          className="justify-between items-center text-black font-medium mt-[2rem]"
+          className="justify-between items-center mt-[3rem] text-black font-medium  max-w-[90rem] mx-auto"
         >
           <img src={nav_logo} alt="img" />
           <Stack component="ul" direction="row" spacing="2.5rem">
