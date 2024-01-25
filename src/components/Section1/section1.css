@@ -3,3 +3,15 @@
 @tailwind utilities;
 @layer components {
 }
+.Different_choice {
+  @apply grid gap-x-[2rem] items-center;
+  grid-template-columns: 5rem 1fr;
+  grid-template-rows: 2.5rem 1fr;
+}
+.Different_choice > p {
+  grid-area: 2/2/3/3;
+}
+
+.Different_choice > div {
+  @apply h-full;
+}
