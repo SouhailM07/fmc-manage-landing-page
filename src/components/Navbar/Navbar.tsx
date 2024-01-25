@@ -14,7 +14,10 @@ export default function Navbar() {
   ];
   return (
     <>
-      <AppBar sx={{ backgroundColor: "transparent", boxShadow: "none" }}>
+      <AppBar
+        sx={{ backgroundColor: "transparent", boxShadow: "none" }}
+        position="sticky"
+      >
         <Toolbar
           component="nav"
           className="justify-between items-center text-black font-medium mt-[2rem]"

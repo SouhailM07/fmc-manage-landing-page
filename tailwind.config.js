@@ -10,6 +10,9 @@
         VeryPaleRed: "hsl(13, 100%, 96%)",
         VaryLightGray: "hsl(0, 0%, 98%)",
       },
+      spacing: {
+        pw: "80rem",
+      },
     },
   },
   plugins: [],
