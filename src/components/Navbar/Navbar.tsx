@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <>
       <AppBar
-        sx={{ backgroundColor: "transparent", boxShadow: "none" }}
+        sx={{ backgroundColor: "white", boxShadow: "none" }}
         position="sticky"
       >
         <Toolbar
