@@ -1,6 +1,6 @@
 import "./mycontainer.css";
 // components
-import { Navbar, Hero, Section1, Section2 } from "../../components";
+import { Navbar, Hero, Section1, Section2, Footer } from "../../components";
 
 export default function MyContainer() {
   return (
@@ -11,6 +11,7 @@ export default function MyContainer() {
         <Section1 />
         <Section2 />
       </main>
+      <Footer />
     </>
   );
 }

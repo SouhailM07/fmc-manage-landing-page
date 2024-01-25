@@ -3,3 +3,7 @@
 @tailwind utilities;
 @layer components {
 }
+
+footer ul li {
+  @apply cursor-pointer;
+}
