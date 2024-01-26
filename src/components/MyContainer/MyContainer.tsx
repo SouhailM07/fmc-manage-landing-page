@@ -7,11 +7,11 @@ export default function MyContainer() {
     <>
       <Navbar />
       <main className="space-y-[10rem]">
-        <Hero />
-        <Section1 />
-        <Section2 />
+        {/* <Hero /> */}
+        {/* <Section1 /> */}
+        {/* <Section2 /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
