@@ -9,7 +9,7 @@ export default function MyContainer() {
       <main className="space-y-[10rem]">
         <Hero />
         <Section1 />
-        {/* <Section2 /> */}
+        <Section2 />
       </main>
       <Footer />
     </>

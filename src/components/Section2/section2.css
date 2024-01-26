@@ -11,6 +11,34 @@ VeryDarkBlue: "hsl(233, 12%, 13%)",
 VeryPaleRed: "hsl(13, 100%, 96%)",
 VaryLightGray: "hsl(0, 0%, 98%)", */
 
-#Section2 ul {
-  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+/* #Section2 ul { */
+/* grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr)); */
+/* } */
+.swiper {
+  @apply h-full w-full flex-wrap;
+}
+
+.swiper-slide {
+  @apply !flex justify-center;
+}
+
+.swiper-pagination {
+  @apply !relative;
+}
+.swiper-pagination-bullet {
+  @apply !bg-orange-600 lg:!hidden !mt-[4rem];
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  @apply border-4 border-red-500 h-[1rem] w-[1rem];
+}
+
+.swiper-container {
+  width: 480px;
+}
+
+.swiper-wrapper {
+  @apply !h-[17rem] pt-[4rem];
 }
