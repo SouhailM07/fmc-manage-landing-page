@@ -84,7 +84,7 @@ export default function Section2() {
                     <p className="text-[1.2rem]  my-[1.5rem] font-medium">
                       {e.title}
                     </p>
-                    <q className="text-DarkGrayishBlue">{e.txt}</q>
+                    <q className="txt">{e.txt}</q>
                   </div>
                 </div>
               </SwiperSlide>

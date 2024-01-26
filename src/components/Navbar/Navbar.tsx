@@ -43,7 +43,10 @@ export default function Navbar() {
           >
             {navLinks.map((e, i) => {
               return (
-                <li key={i} className="cursor-pointer">
+                <li
+                  key={i}
+                  className="cursor-pointer hover:text-DarkGrayishBlue"
+                >
                   {e}
                 </li>
               );

@@ -10,7 +10,7 @@ export default function Hero() {
             <h1 className="max-sm:text-[2.7rem] text-[3.5rem] font-bold leading-[4rem]">
               Bring everyone together to build better products.
             </h1>
-            <p className="md:my-[2.7rem] my-[0rem] max-sm:mt-[1rem] max-sm:mb-[2rem] text-[1.2rem]">
+            <p className="md:my-[2.7rem] my-[0rem] txt max-sm:mt-[1rem] max-sm:mb-[2rem] text-[1.2rem]">
               Manage makes it simple for software teams to plan day-to-day tasks
               while keeping the larger team goals in view.
             </p>

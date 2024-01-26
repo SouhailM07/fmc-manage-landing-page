@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   font-size: 13.5px;
 }
@@ -8,4 +12,8 @@ body {
 
 * {
   transition: 0.3s;
+}
+
+.txt {
+  @apply text-DarkGrayishBlue;
 }

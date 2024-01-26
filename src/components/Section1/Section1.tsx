@@ -26,7 +26,7 @@ export default function Section1() {
           <h1 className="font-bold max-w-[30rem] text-[2.5rem] ">
             What’s different about Manage?
           </h1>
-          <p className="max-w-[24rem]  text-[1.1rem] font-medium   mt-[2.5rem] max-lg:mx-auto">
+          <p className="max-w-[24rem]  text-[1.1rem] font-medium txt  mt-[2.5rem] max-lg:mx-auto">
             Manage provides all the functionality your team needs, without the
             complexity. Our software is tailor-made for modern digital product
             teams.
@@ -45,7 +45,7 @@ export default function Section1() {
                       {e.title}
                     </h3>
                   </div>
-                  <p className="font-medium pr-[2rem]">{e.txt}</p>
+                  <p className="font-medium pr-[2rem] txt">{e.txt}</p>
                 </li>
               );
             })}
