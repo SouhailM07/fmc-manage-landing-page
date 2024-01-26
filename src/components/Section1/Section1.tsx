@@ -21,27 +21,31 @@ export default function Section1() {
   ];
   return (
     <>
-      <article className="flex justify-between max-w-pw mx-auto ">
-        <section>
-          <h1 className="font-bold max-w-[30rem] text-[2.5rem]">
+      <article className="lg:px-xp flex justify-between max-lg:space-y-[5rem] max-w-pw mx-auto max-lg:flex-col max-lg:items-center">
+        <section className="max-lg:text-center max-lg:px-5">
+          <h1 className="font-bold max-w-[30rem] text-[2.5rem] ">
             What’s different about Manage?
           </h1>
-          <p className="max-w-[24rem] text-[1.1rem] font-medium mt-[2.5rem]">
+          <p className="max-w-[24rem]  text-[1.1rem] font-medium   mt-[2.5rem] max-lg:mx-auto">
             Manage provides all the functionality your team needs, without the
             complexity. Our software is tailor-made for modern digital product
             teams.
           </p>
         </section>
         <section>
-          <ul className="space-y-[3rem]">
+          <ul className="space-y-[3rem] pl-[1rem]">
             {arrOfLists.map((e, i) => {
               return (
-                <li key={i} className=" w-[35rem] Different_choice">
-                  <div className="bg-BrightRed grid place-items-center text-white font-bold rounded-full ">
-                    {`0${i + 1} `}
+                <li key={i} className=" max-w-[35rem] Different_choice ">
+                  <div className="flex max-lg:bg-VeryPaleRed h-full ">
+                    <div className="bg-BrightRed grid place-items-center text-white font-bold rounded-full w-[5rem] h-full">
+                      {`0${i + 1} `}
+                    </div>
+                    <h3 className="font-bold flex  items-center  h-full ">
+                      {e.title}
+                    </h3>
                   </div>
-                  <h3 className="font-bold">{e.title}</h3>
-                  <p className="font-medium">{e.txt}</p>
+                  <p className="font-medium pr-[2rem]">{e.txt}</p>
                 </li>
               );
             })}

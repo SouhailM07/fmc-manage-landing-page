@@ -12,6 +12,7 @@
       },
       spacing: {
         pw: "87rem",
+        xp: "2rem",
       },
     },
   },
