@@ -11,7 +11,7 @@ export default function MyContainer() {
         <Section1 />
         {/* <Section2 /> */}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

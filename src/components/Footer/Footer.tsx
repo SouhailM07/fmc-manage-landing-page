@@ -25,32 +25,36 @@ export default function Footer() {
   const both_links: string[][] = [links1, links2];
   return (
     <>
-      <footer className="mt-[15rem] grid ">
+      <footer className="mt-[15rem] ">
         <S1 />
         <article
           id="Footer__s2"
-          className="bg-VeryDarkBlue py-[5rem] grid grid-cols-3 place-items-center "
+          className="bg-VeryDarkBlue gap-y-[3rem] max-lg:grid-rows-[1fr_1fr_1fr_6rem] py-[1rem] lg:py-[5rem] grid grid-cols-3 max-lg:grid-cols-1 place-items-center "
         >
-          <section className="h-[9rem] flex flex-col justify-between ">
+          <section className="h-[9rem] flex flex-col-reverse lg:flex-col justify-between items-center">
             <Logo />
             <Stack
               component="ul"
               direction="row"
-              spacing="1rem"
               alignItems="center"
+              className="lg:space-x-[1rem] space-x-[2rem]"
             >
               {socialLinks.map((e, i) => {
                 return (
                   <li key={i}>
                     <a href="#" aria-label={`follow me on ${e.label}`}>
-                      <img src={e.img} alt="img" />
+                      <img
+                        src={e.img}
+                        alt="img"
+                        className="max-lg:h-[2.7rem]"
+                      />
                     </a>
                   </li>
                 );
               })}
             </Stack>
           </section>
-          <section className="flex justify-between w-[25rem] text-white">
+          <section className="flex justify-between w-[18rem] lg:w-[25rem] text-white">
             {both_links.map((e, i) => {
               return (
                 <Stack
@@ -66,18 +70,23 @@ export default function Footer() {
               );
             })}
           </section>
-          <section className=" h-full flex flex-col justify-between">
-            <div className="space-x-[1rem]">
+          <section className=" lg:h-full lg:flex flex-col justify-between ">
+            <div className="lg:space-x-[1rem] space-x-[0.5rem]">
               <input
                 type="text"
                 placeholder="Updates in your inbox..."
-                className="px-[1.5rem] py-[1rem] rounded-full outline-none"
+                className="px-[1.5rem] py-[1rem] rounded-full outline-none max-lg:w-[18rem]"
               />
-              <button className="px-[1.5rem] py-[1rem] bg-BrightRed rounded-full text-white">
+              <button className="px-[2.2rem] lg:px-[1.5rem] py-[1rem] bg-BrightRed rounded-full text-white font-bold">
                 Go
               </button>
             </div>
-            <p className="text-right text-DarkGrayishBlue">
+            <p className="text-right text-DarkGrayishBlue max-lg:hidden">
+              Copyright 2020. All Rights Reserved
+            </p>
+          </section>
+          <section className="lg:hidden ">
+            <p className="text-right text-DarkGrayishBlue lg:hidden">
               Copyright 2020. All Rights Reserved
             </p>
           </section>
@@ -93,9 +102,9 @@ export default function Footer() {
 let S1 = () => {
   return (
     <>
-      <article className="bg-BrightRed px-[2rem] bg-[center] bg-no-repeat py-[5rem]  bg-[url('/bg-simplify-section-desktop.svg')]">
-        <section className="max-w-pw mx-auto flex justify-between items-center">
-          <h1 className="text-[2rem] w-[30rem] font-bold text-white">
+      <article className="bg-BrightRed px-[2rem] bg-[center] max-lg:py-[7rem] bg-no-repeat py-[5rem]  bg-[url('/bg-simplify-section-desktop.svg')]">
+        <section className="max-w-pw mx-auto flex max-lg:flex-col max-lg:text-center max-lg:space-y-[2rem] justify-between items-center">
+          <h1 className="text-[2rem] max-w-[30rem] max-lg:max-w-[22rem] max-lg:text-[2.5rem] font-bold text-white">
             Simplify how your team works tody.
           </h1>
           <button className="px-[3rem] py-[1rem] text-BrightRed rounded-full bg-white">
