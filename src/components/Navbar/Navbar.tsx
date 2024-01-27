@@ -74,7 +74,7 @@ export default function Navbar() {
 const Navbar_mobile = () => {
   return (
     <>
-      <div className="bg-[#0000005e] fixed lg:hidden w-full top-0  min-h-full   left-0 z-[0]">
+      <div className="bg-[#0000005e] fixed lg:hidden w-full top-0  min-h-full z-[10]  left-0 ">
         <Stack
           role="menu"
           component="ul"
