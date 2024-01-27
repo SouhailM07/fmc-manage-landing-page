@@ -1,5 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer components {
+
+body {
+  @apply overflow-x-hidden;
+}
+#Hero__s2::after {
+  content: "";
+  @apply bg-[url('/bg-tablet-pattern.svg')]  bg-cover absolute top-0  bg-[5rem_-10rem]  bg-no-repeat w-[50rem] h-[55rem] z-[-1];
 }
