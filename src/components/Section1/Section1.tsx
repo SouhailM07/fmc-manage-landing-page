@@ -41,9 +41,9 @@ export default function Section1() {
                     <div className="bg-BrightRed grid place-items-center text-white font-bold rounded-full w-[5rem] h-full">
                       {`0${i + 1} `}
                     </div>
-                    <h3 className="font-bold flex  items-center  h-full ">
+                    <div className="font-bold flex  items-center  h-full ">
                       {e.title}
-                    </h3>
+                    </div>
                   </div>
                   <p className="font-medium pr-[2rem] txt">{e.txt}</p>
                 </li>

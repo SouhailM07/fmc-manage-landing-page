@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer components {
-}
+
 .Different_choice {
   @apply grid gap-x-[2rem] items-center gap-y-[1rem];
   grid-template-columns: 5rem 1fr;
