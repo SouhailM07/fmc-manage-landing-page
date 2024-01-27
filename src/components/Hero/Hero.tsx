@@ -1,6 +1,11 @@
 import "./hero.css";
 // assets
 import hero_lg from "/illustration-intro.svg";
+declare module "react" {
+  interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
+    fetchPriority?: "high" | "low" | "auto";
+  }
+}
 export default function Hero() {
   return (
     <>
@@ -19,7 +24,7 @@ export default function Hero() {
             </button>
           </section>
           <section>
-            <img src={hero_lg} alt="" />
+            <img src={hero_lg} alt="" fetchPriority="high" />
           </section>
         </div>
       </article>

@@ -39,7 +39,8 @@ export default function Footer() {
               component="ul"
               direction="row"
               alignItems="center"
-              className="lg:space-x-[1rem] space-x-[2rem] "
+              className="lg:space-x-[1.3rem] space-x-[2rem] "
+              role="list"
             >
               {socialLinks.map((e, i) => {
                 return (
@@ -47,7 +48,7 @@ export default function Footer() {
                     <a href="#" aria-label={`follow me on ${e.label}`}>
                       <ReactSVG
                         src={e.img}
-                        className=" max-lg:w-[2.7rem] h-full w-[2rem] fill-white hover:fill-BrightRed"
+                        className=" max-lg:w-[2.7rem] h-full w-[1.8rem] fill-white hover:fill-BrightRed"
                       />
                     </a>
                   </li>
@@ -63,6 +64,7 @@ export default function Footer() {
                   component="ul"
                   direction="column"
                   spacing="1.2rem"
+                  role="list"
                 >
                   {e.map((element, index) => {
                     return (

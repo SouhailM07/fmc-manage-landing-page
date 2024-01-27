@@ -17,6 +17,12 @@ import img2 from "/avatar-ali.png";
 import img3 from "/avatar-richard.png";
 import img4 from "/avatar-shanai.png";
 
+declare module "react" {
+  interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
+    fetchPriority?: "high" | "low" | "auto";
+  }
+}
+
 export default function Section2() {
   interface cards_type {
     img: string;
@@ -77,9 +83,12 @@ export default function Section2() {
               >
                 <div className="w-[30rem] lg:px-[0.7rem]">
                   <div className="flex flex-col items-center translate-y-[-2.2rem] ">
-                    <Avatar
+                    <img
+                      // component="img"
                       src={e.img}
-                      sx={{ height: "4.5rem", width: "4.5rem" }}
+                      fetchPriority="low"
+                      className="h-[4.5rem] w-[4.5rem]"
+                      // sx={{ height: "4.5rem", width: "4.5rem" }}
                     />
                     <p className="text-[1.2rem]  my-[1.5rem] font-medium">
                       {e.title}
