@@ -7,5 +7,7 @@ body {
 }
 #Hero__s2::after {
   content: "";
-  @apply bg-[url('/bg-tablet-pattern.svg')]  bg-cover absolute top-0  bg-[5rem_-10rem]  bg-no-repeat w-[50rem] h-[55rem] z-[-1];
+  @apply bg-[url('/bg-tablet-pattern.svg')];
+  @apply max-lg:bg-[length:60rem_60rem]  lg:bg-[5rem_-10rem] max-lg:right-0  max-lg:bg-[10rem_-15rem] max-sm:bg-[length:100vw_100vw] max-sm:bg-[5rem_-2rem] bg-no-repeat bg-contain;
+  @apply w-[50rem] h-[55rem] z-[-1] max-lg:w-full absolute top-0;
 }
