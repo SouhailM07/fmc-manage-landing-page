@@ -30,8 +30,9 @@
   }
 }
 
-#Section1 section:nth-child(1)::before {
+/* #Section1 section:nth-child(1)::before {
   content: "";
-  @apply bg-[url('/bg-tablet-pattern.svg')] border-2 border-red-500 overflow-visible bg-[length:50rem_50rem] bg-[-28rem_20rem] translate-x-[-10rem] bg-no-repeat;
-  @apply absolute h-[60rem] w-[40rem];
-}
+  @apply bg-[url('/bg-tablet-pattern.svg')] bg-no-repeat z-[-1] overflow-hidden;
+  @apply border-2 bg-[center_top] border-red-500 lg:bg-[length:50rem_50rem] lg:bg-[-28rem_20rem] lg:translate-x-[-10rem] max-lg:right-0 max-lg:translate-y-[-27rem] bg-[length:25rem_25rem];
+  @apply absolute h-[60rem] lg:w-[40rem] w-[60vw];
+} */
