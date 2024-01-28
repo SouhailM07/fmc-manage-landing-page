@@ -34,7 +34,13 @@ export default function Navbar() {
           component="nav"
           className="justify-between items-center mt-[1.5rem] lg:mt-[3rem] text-black font-medium  max-w-[90rem] mx-auto "
         >
-          <img src={nav_logo} alt="img" />
+          <img
+            src={nav_logo}
+            alt="img"
+            width="auto"
+            height="auto"
+            fetchPriority="high"
+          />
           <Stack
             component="ul"
             direction="row"
@@ -53,6 +59,9 @@ export default function Navbar() {
             })}
           </Stack>
           <img
+            width="auto"
+            height="auto"
+            fetchPriority="high"
             src={toggleMenu ? close_logo : toggle_nav_logo}
             className="lg:hidden "
             aria-expanded={toggleMenu}

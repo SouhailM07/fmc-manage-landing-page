@@ -26,7 +26,14 @@ export default function Hero() {
           </button>
         </section>
         <section id="Hero__s2">
-          <img id="test" src={hero_lg} alt="image" fetchPriority="high" />
+          <img
+            width="auto"
+            height="auto"
+            id="test"
+            src={hero_lg}
+            alt="image"
+            fetchPriority="high"
+          />
         </section>
       </article>
     </>
