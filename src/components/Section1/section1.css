@@ -29,3 +29,9 @@
     grid-area: 2/1/3/3;
   }
 }
+
+#Section1 section:nth-child(1)::before {
+  content: "";
+  @apply bg-[url('/bg-tablet-pattern.svg')] border-2 border-red-500 overflow-visible bg-[length:50rem_50rem] bg-[-28rem_20rem] translate-x-[-10rem] bg-no-repeat;
+  @apply absolute h-[60rem] w-[40rem];
+}

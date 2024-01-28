@@ -21,8 +21,11 @@ export default function Section1() {
   ];
   return (
     <>
-      <article className="lg:px-xp flex justify-between max-lg:space-y-[5rem] max-w-pw mx-auto max-lg:flex-col max-lg:items-center">
-        <section className="max-lg:text-center max-lg:px-5">
+      <article
+        id="Section1"
+        className="  lg:px-xp flex justify-between max-lg:space-y-[5rem] max-w-pw mx-auto max-lg:flex-col max-lg:items-center"
+      >
+        <section className=" max-lg:text-center max-lg:px-5">
           <h1 className="font-bold max-w-[30rem] text-[2.5rem] ">
             What’s different about Manage?
           </h1>
