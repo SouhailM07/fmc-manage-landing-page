@@ -77,7 +77,7 @@ export default function Section2() {
             return (
               <SwiperSlide
                 key={i}
-                className=" bg-VaryLightGray text-center !h-full"
+                className=" bg-VaryLightGray text-center !h-full cursor-pointer"
               >
                 <div className="w-[30rem] lg:px-[0.7rem]">
                   <div className="flex flex-col items-center translate-y-[-2.2rem] ">
