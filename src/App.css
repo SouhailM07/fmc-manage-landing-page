@@ -10,9 +10,6 @@ body {
   scroll-behavior: smooth;
 }
 
-* {
-  transition: 0.3s;
-}
 
 .txt {
   @apply text-DarkGrayishBlue;
