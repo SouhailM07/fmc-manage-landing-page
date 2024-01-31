@@ -29,8 +29,7 @@ export default function Hero() {
           <img
             id="test"
             src={hero_lg}
-            alt="image"
-            loading="lazy"
+            alt="logo"
             fetchpriority="high"
             width={580}
             height={525}
