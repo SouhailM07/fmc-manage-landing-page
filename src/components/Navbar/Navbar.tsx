@@ -38,6 +38,7 @@ export default function Navbar() {
           <ReactSVG src={nav_logo} />
           <Stack
             component="ul"
+            role="list"
             direction="row"
             spacing="2.5rem"
             className="max-lg:!hidden"
@@ -46,6 +47,7 @@ export default function Navbar() {
               return (
                 <li
                   key={i}
+                  role="listitem"
                   className="cursor-pointer hover:text-DarkGrayishBlue"
                 >
                   {e}
@@ -60,6 +62,7 @@ export default function Navbar() {
             onClick={() => SetToggleMenu(!toggleMenu)}
             id="menuDropdown"
             role="button"
+            aria-label="menubar btn"
           />
           <button className="max-lg:hidden px-[3rem] py-[1rem] text-white rounded-full bg-BrightRed">
             Get Started
