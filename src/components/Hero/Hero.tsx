@@ -32,8 +32,9 @@ export default function Hero() {
             alt="image"
             loading="lazy"
             fetchpriority="high"
-            height="100%"
-            width="100%"
+            width={580}
+            height={525}
+            className="w-full"
           />
         </section>
       </article>
