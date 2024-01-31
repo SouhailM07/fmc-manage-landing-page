@@ -84,7 +84,8 @@ export default function Section2() {
                     <img
                       src={e.img}
                       fetchpriority="low"
-                      className="h-[4.5rem] w-[4.5rem]"
+                      height="16%"
+                      width="16%"
                       alt="image"
                     />
                     <p className="text-[1.2rem]  my-[1.5rem] font-medium">
