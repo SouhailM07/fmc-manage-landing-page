@@ -17,7 +17,7 @@ import img4 from "/avatar-shanai.webp";
 
 declare module "react" {
   interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
-    fetchPriority?: "high" | "low" | "auto";
+    fetchpriority?: "high" | "low" | "auto";
   }
 }
 
@@ -83,7 +83,7 @@ export default function Section2() {
                   <div className="flex flex-col items-center translate-y-[-2.2rem] ">
                     <img
                       src={e.img}
-                      fetchPriority="low"
+                      fetchpriority="low"
                       className="h-[4.5rem] w-[4.5rem]"
                       alt="image"
                       width="auto"

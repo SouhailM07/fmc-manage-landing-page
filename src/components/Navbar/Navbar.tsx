@@ -7,6 +7,7 @@ import { useState } from "react";
 import nav_logo from "/logo.svg";
 import toggle_nav_logo from "/icon-hamburger.svg";
 import close_logo from "/icon-close.svg";
+import { ReactSVG } from "react-svg";
 // ==============>
 // global vars <
 // ==============>
@@ -34,13 +35,7 @@ export default function Navbar() {
           component="nav"
           className="justify-between items-center mt-[1.5rem] lg:mt-[3rem] text-black font-medium  max-w-[90rem] mx-auto "
         >
-          <img
-            src={nav_logo}
-            alt="img"
-            width="auto"
-            height="auto"
-            fetchPriority="high"
-          />
+          <ReactSVG src={nav_logo} />
           <Stack
             component="ul"
             direction="row"
@@ -58,15 +53,11 @@ export default function Navbar() {
               );
             })}
           </Stack>
-          <img
-            width="auto"
-            height="auto"
-            fetchPriority="high"
+          <ReactSVG
             src={toggleMenu ? close_logo : toggle_nav_logo}
             className="lg:hidden "
             aria-expanded={toggleMenu}
             onClick={() => SetToggleMenu(!toggleMenu)}
-            alt="logo"
             id="menuDropdown"
             role="button"
           />
